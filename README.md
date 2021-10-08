@@ -36,9 +36,8 @@ Star the repo by pressing the topmost-right button to start your wonderful journ
 
 ### 1. Fork it :fork_and_knife:
 
-You can get your own fork/copy of [Hacktoberfest-21](https://github.com/ietebitmesra/Hacktoberfest-21) by using the <a href="https://github.com/helios1101/HacktoberFest_20/new/master?readme=1#fork-destination-box"><kbd><b>Fork</b></kbd></a> button on top-right of your screen.
+You can get your own fork/copy of [Hackbook](https://github.com/techhub-community/Hackbook) by using the <kbd><b>Fork</b></kbd> button on top-right of your screen.
 
- [![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/ietebitmesra/Hacktoberfest-21/)
 
 
 ### 2. Clone it :busts_in_silhouette:
@@ -48,15 +47,15 @@ You can get your own fork/copy of [Hacktoberfest-21](https://github.com/ietebitm
 You need to clone (download) it to local machine using
 
 ```sh
-$ git clone https://github.com/Your_Username/Hacktoberfest-21.git
+$ git clone https://github.com/techhub-community/Hackbook.git
 ```
 
 > This makes a local copy of the repository in your machine.
-Once you have cloned the `Hacktoberfest-21` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
+Once you have cloned the `Hackbook` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
 
 ```sh
-# This will change directory to a folder Hacktoberfest-21
-$ cd Hacktoberfest-21
+# This will change directory to a folder Hackbook
+$ cd Hackbook
 ```
 
 Move to this folder for all other commands.
@@ -67,14 +66,14 @@ Run the following commands to see that *your local copy* has a reference to *you
 
 ```sh
 $ git remote -v
-origin  https://github.com/Your_Username/Hacktoberfest-21.git (fetch)
-origin  https://github.com/Your_Username/Hacktoberfest-21.git (push)
+origin  https://github.com/Your_Username/Hackbook.git (fetch)
+origin  https://github.com/Your_Username/Hackbook.git (push)
 ```
 
-Now, let's add a reference to the original [Hacktoberfest-21](https://github.com/ietebitmesra/Hacktoberfest-21/) repository using
+Now, let's add a reference to the original [Hackbook](https://github.com/techhub-community/Hackbook/) repository using
 
 ```sh
-$ git remote add upstream https://github.com/ietebitmesra/Hacktoberfest-21.git
+$ git remote add upstream https://github.com/techhub-community/Hackbook.git
 ```
 
 > This adds a new remote named ***upstream***.
@@ -82,18 +81,18 @@ See the changes using
 
 ```sh
 $ git remote -v
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (fetch)
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (push)
-upstream  https://github.com/Remote_Username/Hacktoberfest-21.git (fetch)
-upstream  https://github.com/Remote_Username/Hacktoberfest-21.git (push)
+origin    https://github.com/Your_Username/Hackbook.git (fetch)
+origin    https://github.com/Your_Username/Hackbook.git (push)
+upstream  https://github.com/Remote_Username/Hackbook.git (fetch)
+upstream  https://github.com/Remote_Username/Hacktbook.git (push)
 ```
 `In your case, you will see`
 ```sh
 $ git remote -V
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (fetch)
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (push)
-upstream  https://github.com/ietebitmesra/Hacktoberfest-21.git (fetch)
-upstream  https://github.com/ietebitmesra/Hacktoberfest-21.git (push)
+origin    https://github.com/Your_Username/Hackbook.git (fetch)
+origin    https://github.com/Your_Username/Hackbook.git (push)
+upstream  https://github.com/ietebitmesra/Hackbook.git (fetch)
+upstream  https://github.com/ietebitmesra/Hackbook.git (push)
 ```
 
 ### 4. Sync it :recycle:
@@ -108,13 +107,13 @@ $ git fetch --all --prune
 $ git checkout master
 # Reset local `master` branch to match the `upstream` repository's `master` branch
 $ git reset --hard upstream/master
-# Push changes to your forked `Hacktoberfest-21` repo
+# Push changes to your forked `Hackbook` repo
 $ git push origin master
 ```
 
 ### 5. Ready Steady Go... :turtle: :rabbit2:
 
-Once you have completed these steps, you are ready to start contributing by checking our `Help Wanted` Issues and creating [pull requests](https://github.com/ietebitmesra/Hacktoberfest-21/pulls).
+Once you have completed these steps, you are ready to start contributing by checking our `Help Wanted` Issues and creating [pull requests](https://github.com/techhub-community/Hackbook/pulls).
 
 ### 6. Create a new branch :bangbang:
 
@@ -171,7 +170,7 @@ Hi hackers!
 
 📪 Have patience. Our team is working hard to get through your pull requests and provide everyone with the feedback needed to join the event. GitHub Actions saved our team an enormous amount of time managing reviews this year but, as much as we love our automations, this is still a manual process to ensure the Code of Conduct is followed and the event can be enjoyed by all.
 
-![2021-github-graduation-social-card-1](https://user-images.githubusercontent.com/6633808/117580730-3ed6e180-b0ae-11eb-86c9-2bd01c7aa8b6.png)
+
 
 
 This repository contains the **Hackbook**. By issuing a pull request to this repository, you can request to be added to the Contributors. 
@@ -186,7 +185,7 @@ Consider that all the information that you add to this repository will be public
 # Who can apply 📝
 Anyone who wants to participate in hacktoberfest. 
 
-# How to join the Class of 2021
+# How to join the list
 
 Here are two steps to join hackbook. 
 1. **Submit a pull request** with your profile information to join the Hackbook and be highlighted in the event.
