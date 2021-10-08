@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500&display=swap');
+body {
+    background-color: #fdf6f6;
+    padding: 0px;
+    margin: 0px;
+    color: #141414;
+}
+
+h1,h3 {
+   text-align: center;
+   margin-top: 0px;
+}
+
+h1 {
+   margin-bottom: 15px;
+}
+
+h3 {
+   font-family: 'JetBrains Mono', cursive;
+   margin-bottom: 25px;
+}
+.template {
+   display: none;
+}
+
+#author { 
+   padding :2%;
+   min-height: 55vh;
+   max-height: 55vh;
+}
+#wrap {
+   min-height: 55vh;
+}
+.techhub-logo{
+    height:8em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media only screen and (max-width:700px){
+    .techhub-logo{
+        height:5em;
+    }
+}
