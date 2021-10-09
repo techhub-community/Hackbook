@@ -2,7 +2,7 @@ var users = []
 var i = 0
 
 var getData = (function ($) {
-  var URL = 'https://api.github.com/repos/codewithkushagra/testforapi/contents/data'
+  var URL = 'https://api.github.com/repos/techhub-community/Hackbook/contents/data'
 
   $.get(URL, function (data, status) {
     data.forEach(function (d) {
@@ -19,7 +19,7 @@ var getData = (function ($) {
             var userinfo=data;
             // console.log(userinfo)
             
-            $.get('https://api.github.com/repos/codewithkushagra/testforapi/contents/data/'+d.name+'/'+d.name+'.md',function(readmedata,status){
+            $.get('https://api.github.com/repos/techhub-community/Hackbook/contents/data/'+d.name+'/'+d.name+'.md',function(readmedata,status){
                 if(readmedata.content==null)
                 {
                     return true;

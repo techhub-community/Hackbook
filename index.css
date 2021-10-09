@@ -96,5 +96,8 @@ h3 {
    #project-card:hover{
        transform: none;
    }
+   .techhub-logo{
+      height:5em;
+   }
 
 }
