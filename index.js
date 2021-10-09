@@ -24,15 +24,17 @@ var getData = (function ($) {
                 {
                     return true;
                 }
-                var qoute=atob(readmedata.content);
+                var inputdata=atob(readmedata.content);
+                const obj = JSON.parse('{'+inputdata+'}');
                 var template =
                 "<div class='col-md-3 col-xs-6 col-lg-3' id='author'><div class='container-fluid'>" +
                     "<a class='thumbnail' target='_blank' href='" + userinfo.html_url + "'>" +
                         "<img src='" + userinfo.avatar_url + "' alt='' class='img-responsive'>" +
                     '</a>' +
                     "<div class='caption'>" +
-                        '<strong>' + userinfo.login + '</strong>' +
-                        '<p>'+qoute+'</p>'+
+                        '<strong>' + obj["name"] + '</strong>' +
+                        '<p>'+obj["quote"]+'<br>'+obj["tech_stack"]+'</p>'+
+                        '<p>'+'</p>'+
                     '</div></div></div>'
 
                 $('#contributors').append(template)
