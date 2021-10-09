@@ -1,38 +1,57 @@
-
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500&display=swap');
-
 *{
-   padding: 0;
-   margin: 0;
+   margin: 0px;
+   padding: 0px;
 }
 
-body {
-    background-color: #fdf6f6;
-    color: #141414;
+
+html{
+   
+   scroll-behavior: smooth;
 }
 
-.project-section {
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   padding-top: 50px;
-   padding-bottom: 50px;
+
+body{
+   scroll-behavior: smooth;
+
 }
 
-#project-card {
+
+
+#userimg{
+   padding: 10px;
+   height: 260px;
+}
+
+
+#project-card{
    margin: 10px;
    align-items: center;
    width: 300px;
    background-color: white;
    height: 350px;
-   /* border-radius: 20px; */
-   box-shadow: 3px 3px 10px rgb(167 167 167);
+   border-radius: 20px;    
+   box-shadow: 3px 3px 10px rgb(167, 167, 167);
    transition: 0.5s;
 }
 
-#userimg{
-   padding: 10px;
-   height: 260px;
+#project-card:hover{
+   transform: scale(1.1);
+}
+
+.project-container{
+   display: flex;
+   justify-content: center;
+
+}
+
+
+.project-section{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 50px;
+
 }
 
 h1,h3 {
@@ -45,13 +64,8 @@ h1 {
 }
 
 h3 {
-   font-family: 'JetBrains Mono', cursive;
    margin-bottom: 25px;
 }
-.template {
-   display: none;
-}
-
 
 
 .techhub-logo{
@@ -60,17 +74,18 @@ h3 {
     margin-bottom: 30px;
 }
 .logo{
-    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-/* -------------------------------- Media-Fire------------------------------------------ */
+
+/*------------------------------------------Responsive Media for Gallery and About me section--------------------------------------------------- */
 
 @media only screen and (max-width: 1264px){
-   .project-section{
+   .project-container{
        display: flex;
        flex-wrap: wrap;
    }
@@ -78,52 +93,8 @@ h3 {
 
 
 @media only screen and (max-width: 700px){
-
-.project-card{
-   margin: 10px;
-   align-items: center;
-   width: 300px;
-   background-color: white;
-   height: 350px;
-   /* border-radius: 20px;     */
-   box-shadow: 3px 3px 10px rgb(167, 167, 167);
-}
-.project-card:hover{
-   transform: none;
-}
-}
-
-@media only screen and (max-width: 641px){
-
-   .project-card{
-       margin: 5px;
-       align-items: center;
-       width: 250px;
-       background-color: white;
-       height: 300px;
-       /* border-radius: 20px;     */
-       box-shadow: 3px 3px 10px rgb(167, 167, 167);
-       transition: 0.5s;
-   }
-   
-   
-   .art{
-       height: 160px;
-       padding-top: 10px;
-       
-   }
-   
-   .art-text{
-       margin-top: 15px;
-       font-weight: 10px;
-       font-size: 23px;
-       font-family: 'Alex Brush', cursive;
+   #project-card:hover{
+       transform: none;
    }
 
-}
-
-@media only screen and (max-width:700px){
-    .techhub-logo{
-        height:5em;
-    }
 }
