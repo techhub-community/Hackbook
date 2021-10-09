@@ -212,9 +212,8 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 ```
 ---
 name: FULLNAME-OR-NICKNAME # No longer than 28 characters
-institution: INSTITUTION-NAME 🚩 # no longer than 58 characters
 quote: YOUR-SENIOR-QUOTE # no longer than 100 characters, avoid using quotes(") to guarantee the format remains the same.
-github_user: YOUR-GITHUB-USERNAME
+tech_stack: YOUR-TECH-STACK
 ---
 ```
 
