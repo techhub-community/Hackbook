@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500&display=swap');
-
 *{
    margin: 0px;
    padding: 0px;
@@ -12,25 +9,29 @@ html{
    scroll-behavior: smooth;
 }
 
+
 body{
    scroll-behavior: smooth;
-   font-family: 'Poppins', sans-serif;
+
 }
 
-#project-card {
+
+
+#userimg{
+   padding: 10px;
+   height: 260px;
+}
+
+
+#project-card{
    margin: 10px;
    align-items: center;
    width: 300px;
    background-color: white;
    height: 350px;
-   border-radius: 20px;
-   box-shadow: 3px 3px 10px rgb(167 167 167);
+   border-radius: 20px;    
+   box-shadow: 3px 3px 10px rgb(167, 167, 167);
    transition: 0.5s;
-}
-
-
-#project-card a{
-   color: black;
 }
 
 #project-card:hover{
@@ -43,20 +44,14 @@ body{
 
 }
 
+
 .project-section{
    display: flex;
    flex-direction: column;
    text-align: center;
-   /* margin-left: 60px;
-   margin-right: 60px; */
    padding-top: 50px;
    padding-bottom: 50px;
 
-}
-
-#userimg{
-   padding: 10px;
-   height: 260px;
 }
 
 h1,h3 {
@@ -69,12 +64,9 @@ h1 {
 }
 
 h3 {
-   font-family: 'JetBrains Mono', cursive;
    margin-bottom: 25px;
 }
-.template {
-   display: none;
-}
+
 
 .techhub-logo{
     height:8em;
@@ -89,7 +81,8 @@ h3 {
     
 }
 
-/* -------------------------------- Media-Fire------------------------------------------ */
+
+/*------------------------------------------Responsive Media for Gallery and About me section--------------------------------------------------- */
 
 @media only screen and (max-width: 1264px){
    .project-container{
@@ -98,3 +91,10 @@ h3 {
    }
 }
 
+
+@media only screen and (max-width: 700px){
+   #project-card:hover{
+       transform: none;
+   }
+
+}
