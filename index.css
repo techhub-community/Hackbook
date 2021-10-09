@@ -41,7 +41,6 @@ body{
 .project-container{
    display: flex;
    justify-content: center;
-
 }
 
 
@@ -49,6 +48,8 @@ body{
    display: flex;
    flex-direction: column;
    text-align: center;
+   margin-left: 60px;
+   margin-right: 60px;
    padding-top: 50px;
    padding-bottom: 50px;
 
@@ -70,7 +71,7 @@ h3 {
 
 
 .techhub-logo{
-    height:8em;
+    height:7em;
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -85,7 +86,7 @@ h3 {
 
 /*------------------------------------------Responsive Media for Gallery and About me section--------------------------------------------------- */
 
-@media only screen and (max-width: 1264px){
+@media only screen and (max-width: 1642px){
    .project-container{
        display: flex;
        flex-wrap: wrap;
