@@ -211,7 +211,7 @@ _data/MonaTheOctocat/MonaTheOctocat.md
 Copy the next template into your file, delete the boilerplate data and fill the information with yours.
 ```
 "name": "FULLNAME-OR-NICKNAME", # No longer than 28 characters
-"quote": "YOUR-SENIOR-QUOTE", # no longer than 100 characters, avoid using quotes(") to guarantee the format remains the same.
+"quote": "YOUR-SENIOR-QUOTE", # no longer than 100 characters
 "tech_stack": "YOUR-TECH-STACK" # mention any one or two skills only.
 ```
 
