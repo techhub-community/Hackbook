@@ -1,6 +1,6 @@
 # HacktoberFest-2021 🏆
 
-![About Hacktoberfest](https://hacktoberfest.digitalocean.com/)
+[About Hacktoberfest](https://hacktoberfest.digitalocean.com/)
 
 <hr>
 
