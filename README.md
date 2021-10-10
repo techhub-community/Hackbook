@@ -86,7 +86,7 @@ upstream  https://github.com/Remote_Username/Hacktbook.git (push)
 # How to join the list
 
 Here are two steps to join hackbook. 
-1. **Submit a pull request** with your profile information to join the Hackbook and be highlighted in the event.
+## 1. **Submit a pull request** with your profile information to join the Hackbook and be highlighted in the event.
 
 ## 2. Add yourself to Hackbook 🏫
 
