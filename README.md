@@ -4,7 +4,7 @@
 
 <hr>
 
-# How to Setup & Contribute 
+# How to Setup
 
 ### 1. Fork it :fork_and_knife:
 
