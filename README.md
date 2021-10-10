@@ -1,40 +1,10 @@
 # HacktoberFest-2021 🏆
 
-![Techhub-Hacktoberfest2021](https://raw.githubusercontent.com/anjali112-bit/Posters/main/Techhub/estore.png)
+![About Hacktoberfest](https://hacktoberfest.digitalocean.com/)
 
-#### 🎯 HacktoberFest - The month long festival for developers
-
-- This repository aims to give an introduction as to how the Open Source World functions. Use this project to make your first contribution to an open-source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
-
-- Make sure to grab some cool swags during Hacktoberfest by getting involved in the open-source community and completing some simple tasks in this project.
-
-- This repository is open to all members of the GitHub community. Any member can contribute to this project without being a collaborator. We encourage first time contributors, and also have interesting tasks for experienced developers.
-
-
-# <b>What is Hacktoberfest?</b> 😕
-
-A month-long celebration from October 1st to October 31st presented by Digital Ocean and DEV Community collaborated with GitHub to get people involved in Open Source. Create your very first pull request to any public repository on GitHub and contribute to the open-source developer community.
-
-https://hacktoberfest.digitalocean.com/
-
-## Rules ⚓
-
-To earn your Hacktoberfest tee or tree reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs can be made to participating public repos on GitHub, those that have the Hacktoberfest topic. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants who successfully complete the challenge will be eligible to receive a prize.
-
-- <b>Read the participation details to learn how to earn your Hacktoberfest tee or tree reward. </b>
-
-- <b>Those who have not registered yet for hacktoberfest can get themselves registered <a href="https://hacktoberfest.digitalocean.com/register">HERE</a></b>
 <hr>
 
 # How to Setup & Contribute 
-
-<details>
- <summary> click here</summary>
- 
- ### 0. Star The Repo :star2:
-
-Star the repo by pressing the topmost-right button to start your wonderful journey.
-
 
 ### 1. Fork it :fork_and_knife:
 
@@ -88,77 +58,6 @@ origin    https://github.com/Your_Username/Hackbook.git (push)
 upstream  https://github.com/Remote_Username/Hackbook.git (fetch)
 upstream  https://github.com/Remote_Username/Hacktbook.git (push)
 ```
-`In your case, you will see`
-```sh
-$ git remote -V
-origin    https://github.com/Your_Username/Hackbook.git (fetch)
-origin    https://github.com/Your_Username/Hackbook.git (push)
-upstream  https://github.com/ietebitmesra/Hackbook.git (fetch)
-upstream  https://github.com/ietebitmesra/Hackbook.git (push)
-```
-
-### 4. Sync it :recycle:
-
-Always keep your local copy of the repository updated with the original repository.
-Before making any changes and/or in an appropriate interval, run the following commands *carefully* to update your local repository.
-
-```sh
-# Fetch all remote repositories and delete any deleted remote branches
-$ git fetch --all --prune
-# Switch to `master` branch
-$ git checkout master
-# Reset local `master` branch to match the `upstream` repository's `master` branch
-$ git reset --hard upstream/master
-# Push changes to your forked `Hackbook` repo
-$ git push origin master
-```
-
-### 5. Ready Steady Go... :turtle: :rabbit2:
-
-Once you have completed these steps, you are ready to start contributing by checking our `Help Wanted` Issues and creating [pull requests](https://github.com/techhub-community/Hackbook/pulls).
-
-### 6. Create a new branch :bangbang:
-
-Whenever you are going to contribute. Please create a separate branch using command and keep your `master` branch clean (i.e. synced with remote branch).
-
-```sh
-# It will create a new branch with name Branch_Name and switch to branch Folder_Name
-$ git checkout -b BranchName
-```
-
-Create a separate branch for contribution and try to use the same name of the branch as of folder.
-
-To switch to the desired branch
-
-```sh
-# To switch from one folder to other
-$ git checkout BranchName
-```
-
-To add the changes to the branch. Use
-
-```sh
-# To add all files to branch Folder_Name
-$ git add .
-```
-
-Type in a message relevant for the code reviewer using
-
-```sh
-# This message get associated with all files you have changed
-$ git commit -m 'relevant message'
-```
-
-Now, Push your awesome work to your remote repository using
-
-```sh
-# To push your work to your remote repository
-$ git push -u origin BranchName
-```
-
-Finally, go to your repository in the browser and click on `compare and pull requests`.
-Then add a title and description to your pull request that explains your precious effor
-</details>
 
 # Hackbook
 

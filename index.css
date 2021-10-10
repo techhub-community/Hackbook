@@ -97,6 +97,7 @@ h3 {
 @media only screen and (max-width: 700px){
    #project-card:hover{
        transform: none;
+       height: 380px;
    }
    .techhub-logo{
       height:5em;
