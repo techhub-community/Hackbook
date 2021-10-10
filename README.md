@@ -4,6 +4,30 @@
 
 <hr>
 
+# Hackbook
+
+### OCT 8, 2021
+
+Hi hackers!
+
+**Looking for more ways to support the Community? Here are a few ideas:**
+
+👩‍💻 Continue providing feedback on pull requests to help other hackers get their pull request ready to merge. We appreciate your help and love seeing the magic of social coding.
+
+📪 Have patience. Our team is working hard to get through your pull requests and provide everyone with the feedback needed to join the event. GitHub Actions saved our team an enormous amount of time managing reviews this year but, as much as we love our automations, this is still a manual process to ensure the Code of Conduct is followed and the event can be enjoyed by all.
+
+![Techhub-Hackbook](https://raw.githubusercontent.com/anjali112-bit/Posters/main/Techhub/techhub%20HACKBOOK.png)
+
+
+This repository contains the **Hackbook**. By issuing a pull request to this repository, you can request to be added to the Contributors. 
+ 
+
+
+## Disclaimer 👀
+Consider that all the information that you add to this repository will be publicly available.
+
+- If you don't feel comfortable with displaying your full name, you can include a short name or nickname instead.
+
 # How to Setup
 
 ### 1. Fork it :fork_and_knife:
@@ -58,33 +82,6 @@ origin    https://github.com/Your_Username/Hackbook.git (push)
 upstream  https://github.com/Remote_Username/Hackbook.git (fetch)
 upstream  https://github.com/Remote_Username/Hacktbook.git (push)
 ```
-
-# Hackbook
-
-### OCT 8, 2021
-
-Hi hackers!
-
-**Looking for more ways to support the Community? Here are a few ideas:**
-
-👩‍💻 Continue providing feedback on pull requests to help other hackers get their pull request ready to merge. We appreciate your help and love seeing the magic of social coding.
-
-📪 Have patience. Our team is working hard to get through your pull requests and provide everyone with the feedback needed to join the event. GitHub Actions saved our team an enormous amount of time managing reviews this year but, as much as we love our automations, this is still a manual process to ensure the Code of Conduct is followed and the event can be enjoyed by all.
-
-![Techhub-Hackbook](https://raw.githubusercontent.com/anjali112-bit/Posters/main/Techhub/techhub%20HACKBOOK.png)
-
-
-This repository contains the **Hackbook**. By issuing a pull request to this repository, you can request to be added to the Contributors. 
- 
-
-
-## Disclaimer 👀
-Consider that all the information that you add to this repository will be publicly available.
-
-- If you don't feel comfortable with displaying your full name, you can include a short name or nickname instead.
-
-# Who can apply 📝
-Anyone who wants to participate in hacktoberfest. 
 
 # How to join the list
 
