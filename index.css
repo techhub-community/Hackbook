@@ -40,13 +40,15 @@ body{
 
 .project-container{
    display: flex;
+   max-width: 1446px;
+   flex-wrap: wrap;
    justify-content: center;
 }
 
 
 .project-section{
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    text-align: center;
    margin-left: 60px;
    margin-right: 60px;
