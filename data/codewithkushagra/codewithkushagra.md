@@ -1,3 +1,3 @@
 "name": "Kushagra Agarwal",
-"quote": "Hard work is key to success",
-"tech_stack": "app dev"
+"quote": "No one stays but you",
+"tech_stack": "Problem Solver | Web Dev"
