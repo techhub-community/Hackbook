@@ -73,7 +73,7 @@ h3 {
 
 
 .techhub-logo{
-    height:7em;
+    height:5em;
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -84,8 +84,26 @@ h3 {
     align-items: center;
     
 }
-
-
+.mlogo{
+   display: none;
+}
+.big-menu{
+   margin-top:30px;
+   display:flex;
+}
+nav{
+   display: flex;
+   justify-content: space-between; /*for shifting nav to left*/
+}
+.mbig-menu{
+   display:none;
+}
+.discord-logo{
+   display:none;
+}
+.nav-list{
+    padding:10px;
+}
 /*------------------------------------------Responsive Media for Gallery and About me section--------------------------------------------------- */
 
 @media only screen and (max-width: 1642px){
@@ -94,15 +112,42 @@ h3 {
        flex-wrap: wrap;
    }
 }
-
-
 @media only screen and (max-width: 700px){
+   .body{
+      overflow-x: hidden;
+   }
    #project-card:hover{
        transform: none;
        height: 380px;
    }
    .techhub-logo{
-      height:5em;
+      height:4em;
+      width:100%;
    }
-
+   .logo{
+      display:none;
+   }
+   .mlogo{
+      display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .big-menu{
+      display:none;
+   }
+   .mbig-menu{
+      width:100%;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+   }
+   .nav-list{
+      padding:10px;
+   }
+   h3{
+      margin-top: 15px;
+   }
+   .project-section{
+      padding-top: 20px;
+   }
 }
