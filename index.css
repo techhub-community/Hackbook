@@ -2,11 +2,10 @@
 *{
    margin: 0px;
    padding: 0px;
+   box-sizing: border-box;
 }
 
-
-html{
-   
+html{   
    scroll-behavior: smooth;
 }
 
@@ -14,8 +13,6 @@ html{
 body{
    scroll-behavior: smooth;
 }
-
-
 
 #userimg{
    padding: 10px;
@@ -76,13 +73,17 @@ h3 {
     height:5em;
     margin-top: 10px;
     margin-bottom: 30px;
+    margin-left: 15px;
 }
 .logo{
-
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-top: 2px;
+    margin-left: 1px;
+
 }
 .mlogo{
    display: none;
@@ -94,16 +95,22 @@ h3 {
 nav{
    display: flex;
    justify-content: space-between; /*for shifting nav to left*/
+   margin-left: 10px;
+   padding-bottom:1px;
 }
 .mbig-menu{
    display:none;
 }
 .discord-logo{
    display:none;
+   margin-top:5;
+   margin-right:5;
 }
 .nav-list{
     padding:10px;
+    margin-right: 10px;
 }
+
 /*------------------------------------------Responsive Media for Gallery and About me section--------------------------------------------------- */
 
 @media only screen and (max-width: 1642px){
@@ -143,6 +150,8 @@ nav{
    }
    .nav-list{
       padding:10px;
+      display: flex;
+      margin-right: 10px;
    }
    h3{
       margin-top: 15px;
@@ -150,4 +159,12 @@ nav{
    .project-section{
       padding-top: 20px;
    }
+}
+.text-footer{
+   text-align: center;
+   padding: 30px 0;
+   font-family: 'Courier New', Courier, monospace;
+   display:flex;
+   justify-content: center;
+   color: rgb(11, 133, 240);
 }
