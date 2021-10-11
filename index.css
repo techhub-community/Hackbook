@@ -144,4 +144,10 @@ nav{
    .nav-list{
       padding:10px;
    }
+   h3{
+      margin-top: 15px;
+   }
+   .project-section{
+      padding-top: 20px;
+   }
 }
