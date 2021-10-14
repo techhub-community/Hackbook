@@ -73,7 +73,12 @@ const getContributors = async () => {
     const r = await fetch(
       "https://api.github.com/repos/techhub-community/Hackbook/contents/data"
     );
-    return r.json();
+
+    if (r.status === 200) {
+      return r.json();
+    } else {
+      return r.json();
+    }
   } catch (e) {
     return e.message;
   }
@@ -97,6 +102,9 @@ setTimeout(() => {
   getContributors()
     .then((response) => {
       console.log(response);
+      if (response.message) {
+        return (container.innerHTML = `<div class="error-message"> <img src="./assests/server_down.svg" alt="down" /><h3>${response.message}</h3></dv>`);
+      }
 
       response.forEach(async (user) => {
         const { name } = user;
@@ -129,7 +137,7 @@ setTimeout(() => {
       });
     })
     .catch((e) => {
-      console.log(e);
+      console.log("error", e);
     });
 }, 5000);
 
