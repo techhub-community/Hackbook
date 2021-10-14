@@ -102,9 +102,10 @@ nav{
    display:none;
 }
 .discord-logo{
-   display:none;
+   display:flex;
    margin-top:5;
    margin-right:5;
+   border-radius:15px 50px;
 }
 .nav-list{
     padding:10px;
@@ -166,5 +167,5 @@ nav{
    font-family: 'Courier New', Courier, monospace;
    display:flex;
    justify-content: center;
-   color: rgb(11, 133, 240);
+   color: black;
 }
