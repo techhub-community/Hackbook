@@ -88,21 +88,24 @@ nav {
 .card-blank {
   /* width: 317px; */
   height: 155px;
-  box-shadow: 0px 82px 326px rgba(0, 0, 0, 0.07),
-    0px 30.6584px 72.8164px rgba(0, 0, 0, 0.0537615),
-    0px 7.66775px 21.6793px rgba(0, 0, 0, 0.0366426);
+
   border-radius: 5px;
   background: #f9f9f9;
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease-in;
 }
+
 .contributor-card:hover {
   transform: scale(1.1);
+  box-shadow: 0px 82px 326px rgba(0, 0, 0, 0.07),
+    0px 30.6584px 72.8164px rgba(0, 0, 0, 0.0537615),
+    0px 7.66775px 21.6793px rgba(0, 0, 0, 0.0366426);
 }
-.github-btn {
+.github-btn,
+.card-blank-github-btn {
   display: flex;
-  width: 126px;
+  width: 35px;
   height: 35px;
   background: #000;
   color: #fff;
@@ -112,8 +115,13 @@ nav {
   position: absolute;
   top: -15px;
   right: 15px;
-  font-size: 11px;
   text-decoration: none;
+}
+.github-icon {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .card-blank-avatar,
@@ -127,6 +135,12 @@ nav {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+.card-avatar {
+  transform: rotateZ(10deg);
+  top: -25px;
+  left: -5px;
 }
 .card-avatar img {
   width: 100%;

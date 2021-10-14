@@ -89,6 +89,7 @@ const container = document.querySelector("#contributors");
 for (let i = 0; i < 16; i++) {
   container.innerHTML += `<div class="card-blank">
   <div class="card-blank-avatar"></div>
+  <div class="card-blank-github-btn"><div class="github-icon"></div></div>
   <div class="card-blank-detail">
       <div class="card-blank-name"></div>
       <div class="card-blank-quote"></div>
@@ -125,7 +126,7 @@ setTimeout(() => {
         container.innerHTML += `<div class="contributor-card">
       <div class="card-avatar">
       <img src="${avatar_url}" alt="user-avatar"/></div>
-      <a class="github-btn" href="https://github.com/${name}">View on Github</a>
+      <a class="github-btn" href="https://github.com/${name}"><i class="fab fa-github"></i></a>
       <div class="card-details">
       
           <h3 class="contributor_name">${obj.name}</h3>
