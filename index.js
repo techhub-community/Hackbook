@@ -125,7 +125,7 @@ setTimeout(() => {
         container.innerHTML += `<div class="contributor-card">
       <div class="card-avatar">
       <img src="${avatar_url}" alt="user-avatar"/></div>
-      <a class="github-btn">View on Github</a>
+      <a class="github-btn" href="https://github.com/${name}">View on Github</a>
       <div class="card-details">
       
           <h3 class="contributor_name">${obj.name}</h3>
