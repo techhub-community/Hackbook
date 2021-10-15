@@ -106,7 +106,7 @@ setTimeout(() => {
         return (container.innerHTML = `<div class="error-message"> <img src="./assests/server_down.svg" alt="down" /><h3>${response.message}</h3></dv>`);
       }
 
-      response.forEach(async (user) => {
+      response.sort().forEach(async (user) => {
         const { name } = user;
 
         const user_info = await axios.get(
@@ -161,7 +161,7 @@ document.body.addEventListener("click", (e) => {
 
 document.addEventListener("scroll", (e) => {
   const scrollvalue = document.documentElement.scrollTop;
-  console.log(scrollvalue);
+
   if (scrollvalue > 35) {
     document.querySelector(".header").classList.add("header-shadow");
   } else {
@@ -171,7 +171,7 @@ document.addEventListener("scroll", (e) => {
 
 document.addEventListener("scroll", (e) => {
   const scrollvalue = document.documentElement.scrollTop;
-  console.log(scrollvalue);
+
   if (scrollvalue > 250) {
     document.querySelector(".goto").classList.add("goto-enable");
   } else {
@@ -196,9 +196,40 @@ getDiscord()
   .then((discord_data) => {
     const { members, instant_invite } = discord_data;
     document.querySelector(".discord_btn").setAttribute("href", instant_invite);
-    document.querySelector(".discord-count").textContent = members.filter(
-      (member) => member.status === "online"
-    ).length;
+
+    console.log(members);
+    const online_members = members.filter(
+      (member) => member.status === "online" || member.status === "idle"
+    );
+
+    const humans = online_members
+      .filter((online_member) => {
+        return (
+          online_member.username !== "community-manager" &&
+          online_member.username !== "poll-helper" &&
+          online_member.username !== "IndianMemer" &&
+          online_member.username !== "Dank Memer" &&
+          online_member.username !== "MEE6" &&
+          online_member.username !== "Hydra"
+        );
+      })
+      .sort();
+
+    console.log("Humans ", humans);
+    humans.slice(0, 3).forEach((user) => {
+      document.querySelector(
+        ".online-avatars"
+      ).innerHTML += `<div class="online-avatar">
+    <img src="${user.avatar_url}" alt="user-avatar" />
+    </div>`;
+    });
+    document.querySelector(
+      ".online-avatars"
+    ).innerHTML += `<div class="online-avatar">
+    +${humans.length - 3}
+    </div>`;
+
+    document.querySelector(".discord-count").textContent = humans.length;
   })
   .catch((e) => {
     console.log(e);
