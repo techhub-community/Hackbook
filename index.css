@@ -2,6 +2,11 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 html {
@@ -31,7 +36,9 @@ body {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
+  transition: all 0.3s ease-in;
 }
+
 .header {
   width: 100%;
   height: 55px;
@@ -40,6 +47,7 @@ body {
   background-color: #fff;
   z-index: 999;
 }
+
 .header-shadow {
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.219);
 }
@@ -74,6 +82,7 @@ nav {
 }
 .social-links a {
   color: #000;
+  transition: all 0.3s ease-in;
 }
 
 .hamburger {
@@ -81,12 +90,13 @@ nav {
   height: 35px;
   margin-left: 10px;
   border-radius: 50%;
-  background-color: #fafafa;
   border: 1px solid transparent;
   display: none;
   position: relative;
   cursor: pointer;
+  background-color: transparent;
 }
+
 .mobile-nav {
   width: auto;
   list-style: none;
@@ -103,30 +113,9 @@ nav {
   display: none;
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.219);
 }
+
 .mobile-nav-enable {
   display: block;
-}
-
-.goto {
-  width: 35px;
-  height: 35px;
-  background-color: rgb(109, 136, 255);
-  display: flex;
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  border-radius: 50%;
-  transform: scale(0.1);
-  opacity: 0;
-  transition: all 0.3s ease-in;
-}
-.goto-enable {
-  transform: scale(1);
-  opacity: 1;
 }
 
 @keyframes slide-down {
@@ -155,11 +144,13 @@ nav {
   width: 90%;
   margin: 0 auto;
 }
+
 .hero-title {
   text-align: left;
   margin-top: 35px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 65px;
+  transition: all 0.3s ease-in;
 }
 
 #contributors {
@@ -179,6 +170,9 @@ nav {
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease-in;
+}
+.contributor_name {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contributor-card:hover {
@@ -311,10 +305,12 @@ nav {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: rgb(5, 255, 159);
+  background-color: rgb(0, 26, 255);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 9px;
+  font-weight: 900;
 }
 .online-avatar img {
   width: 100%;
@@ -343,6 +339,26 @@ nav {
 }
 .discord-count {
   display: none;
+}
+
+.theme-switcher {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border: 1px solid transparent;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: -500px;
+  bottom: 25px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: all 0.5s ease-in;
+}
+.theme-switcher-enable {
+  right: 25px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -375,4 +391,53 @@ nav {
     align-items: center;
     justify-content: center;
   }
+}
+
+/*dark theme*/
+.dark {
+  background-color: #333131;
+  transition: all 0.3s ease-in;
+}
+
+.dark .theme-switcher {
+  background-color: #262626;
+}
+
+.dark .contributor-card,
+.dark .card-blank {
+  background: #2c2c2c;
+}
+.dark .contributor_name {
+  color: #4b4bff;
+}
+
+.dark .hero-title {
+  color: #7277e7;
+}
+.dark .quote {
+  color: #fff !important;
+}
+.dark .stack {
+  color: #fff;
+}
+
+.dark .mobile-nav {
+  background-color: #313131;
+}
+.dark .mobile-nav li a {
+  color: #7277e7;
+}
+
+.dark .hamburger {
+  color: #fff;
+}
+
+.dark .social-links a {
+  color: #7277e7;
+}
+.dark .error-message h3 {
+  color: #7277e7;
+}
+.dark .header {
+  background-color: #333131;
 }
