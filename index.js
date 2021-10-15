@@ -194,7 +194,6 @@ const getDiscord = async () => {
 
 getDiscord()
   .then((discord_data) => {
-    console.log(discord_data);
     const { members, instant_invite } = discord_data;
     document.querySelector(".discord_btn").setAttribute("href", instant_invite);
     document.querySelector(".discord-count").textContent = members.filter(
@@ -204,20 +203,3 @@ getDiscord()
   .catch((e) => {
     console.log(e);
   });
-
-setInterval(() => {
-  getDiscord()
-    .then((discord_data) => {
-      console.log(discord_data);
-      const { members, instant_invite } = discord_data;
-      document
-        .querySelector(".discord_btn")
-        .setAttribute("href", instant_invite);
-      document.querySelector(".discord-count").textContent = members.filter(
-        (member) => member.status === "online"
-      ).length;
-    })
-    .catch((e) => {
-      console.log(e);
-    });
-}, 30000);
