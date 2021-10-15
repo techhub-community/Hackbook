@@ -34,11 +34,14 @@ body {
 }
 .header {
   width: 100%;
-  height: 65px;
+  height: 55px;
   position: sticky;
   top: 0;
   background-color: #fff;
   z-index: 999;
+}
+.header-shadow {
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.219);
 }
 .header-wrapper {
   width: 90%;
@@ -73,8 +76,84 @@ nav {
   color: #000;
 }
 
+.hamburger {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  border: 1px solid transparent;
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+.mobile-nav {
+  width: auto;
+  list-style: none;
+  position: absolute;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  left: -90px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  animation: slide-down 0.2s 1;
+  transform-origin: right 0;
+  display: none;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.219);
+}
+.mobile-nav-enable {
+  display: block;
+}
+
+.goto {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(109, 136, 255);
+  display: flex;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  transform: scale(0.1);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.goto-enable {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.mobile-nav li {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.mobile-nav li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #000;
+}
 .hero-title {
   text-align: center;
+  margin-top: 35px;
 }
 
 #contributors {
@@ -123,7 +202,9 @@ nav {
   background-color: #fff;
   border-radius: 50%;
 }
-
+.card-blank-avatar {
+  overflow: hidden;
+}
 .card-blank-avatar,
 .card-avatar {
   width: 65px;
@@ -134,7 +215,7 @@ nav {
   background: #c4c4c4;
   border-radius: 5px;
   position: relative;
-  overflow: hidden;
+
   transition: all 0.3s ease-in;
 }
 .card-avatar {
@@ -196,5 +277,31 @@ nav {
   }
   100% {
     transform: skew(-10deg) translateX(200%);
+  }
+}
+
+.discord_btn {
+  width: 130px;
+  height: 35px;
+  background-color: rgb(131, 103, 255);
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  border-radius: 5px;
+  justify-content: center;
+  gap: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-links {
+    display: none;
   }
 }

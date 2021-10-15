@@ -102,7 +102,6 @@ setTimeout(() => {
   container.innerHTML = "";
   getContributors()
     .then((response) => {
-      console.log(response);
       if (response.message) {
         return (container.innerHTML = `<div class="error-message"> <img src="./assests/server_down.svg" alt="down" /><h3>${response.message}</h3></dv>`);
       }
@@ -122,7 +121,6 @@ setTimeout(() => {
 
         const obj = JSON.parse("{" + inputdata + "}");
 
-        console.log(obj);
         container.innerHTML += `<div class="contributor-card">
       <div class="card-avatar">
       <img src="${avatar_url}" alt="user-avatar"/></div>
@@ -143,3 +141,66 @@ setTimeout(() => {
 }, 5000);
 
 //https://api.github.com/repos/techhub-community/Hackbook/contents/data
+
+// hamburger
+
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".mobile-nav");
+document.body.addEventListener("click", (e) => {
+  const target = e.target;
+
+  const target_class = target.classList;
+  if (target_class.contains("hamburger") || target_class.contains("fa-bars")) {
+    nav.classList.toggle("mobile-nav-enable");
+  } else {
+    nav.classList.remove("mobile-nav-enable");
+  }
+});
+
+// add a shadow class to navbar on scroll
+
+document.addEventListener("scroll", (e) => {
+  const scrollvalue = document.documentElement.scrollTop;
+  console.log(scrollvalue);
+  if (scrollvalue > 35) {
+    document.querySelector(".header").classList.add("header-shadow");
+  } else {
+    document.querySelector(".header").classList.remove("header-shadow");
+  }
+});
+
+document.addEventListener("scroll", (e) => {
+  const scrollvalue = document.documentElement.scrollTop;
+  console.log(scrollvalue);
+  if (scrollvalue > 250) {
+    document.querySelector(".goto").classList.add("goto-enable");
+  } else {
+    document.querySelector(".goto").classList.remove("goto-enable");
+  }
+});
+
+// get discord data
+
+const getDiscord = async () => {
+  try {
+    const r = await axios.get(
+      "https://discordapp.com/api/guilds/814219041614594078/widget.json"
+    );
+    return r.data;
+  } catch (e) {
+    return e.message;
+  }
+};
+
+getDiscord()
+  .then((discord_data) => {
+    console.log(discord_data);
+    const { members, instant_invite } = discord_data;
+    document.querySelector(".discord_btn").setAttribute("href", instant_invite);
+    document.querySelector(".discord-count").textContent = members.filter(
+      (member) => member.status === "online"
+    ).length;
+  })
+  .catch((e) => {
+    console.log(e);
+  });
