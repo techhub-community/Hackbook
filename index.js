@@ -13,10 +13,10 @@ var getData = (function ($) {
       if (users.indexOf(d.name) == -1) {
         $.get('https://api.github.com/users/'+d.name+'',function(data,status){
 //           console.log(data)
-            if(data.name==null)
-            {
-                return true;
-            }
+//             if(data.name==null)
+//             {
+//                 return true;
+//             }
             var userinfo=data;
             // console.log(userinfo)
             
