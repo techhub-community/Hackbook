@@ -128,8 +128,8 @@ setTimeout(() => {
       <div class="card-details">
       
           <h3 class="contributor_name">${obj.name}</h3>
-          <p>${obj.quote}</p>
-          <p>${obj.tech_stack}</p>
+          <p class="quote">${obj.quote}</p>
+          <p class="stack">${obj.tech_stack}</p>
           
       </div>
   </div>`;
@@ -169,16 +169,6 @@ document.addEventListener("scroll", (e) => {
   }
 });
 
-document.addEventListener("scroll", (e) => {
-  const scrollvalue = document.documentElement.scrollTop;
-
-  if (scrollvalue > 250) {
-    document.querySelector(".goto").classList.add("goto-enable");
-  } else {
-    document.querySelector(".goto").classList.remove("goto-enable");
-  }
-});
-
 // get discord data
 
 const getDiscord = async () => {
@@ -215,7 +205,6 @@ getDiscord()
       })
       .sort();
 
-    console.log("Humans ", humans);
     humans.slice(0, 3).forEach((user) => {
       document.querySelector(
         ".online-avatars"
@@ -234,3 +223,49 @@ getDiscord()
   .catch((e) => {
     console.log(e);
   });
+
+// theme implementation
+
+const theme_btn = document.querySelector(".theme-switcher");
+
+theme_btn.addEventListener("click", () => {
+  const current_theme = localStorage.getItem("dark-theme");
+  console.log(current_theme);
+
+  if (current_theme == null) {
+    document.body.classList.add("dark");
+    localStorage.setItem("dark-theme", true);
+    changeThemeIcon(true);
+  } else {
+    document.body.classList.remove("dark");
+    localStorage.clear();
+    changeThemeIcon(false);
+  }
+});
+
+const changeThemeIcon = (flag) => {
+  if (flag) {
+    document.querySelector(
+      ".theme-switcher"
+    ).innerHTML = `<i class="far fa-sun"></i>`;
+  } else {
+    document.querySelector(
+      ".theme-switcher"
+    ).innerHTML = `<i class="fas fa-moon"></i>`;
+  }
+};
+
+// detect theme on window load
+
+window.onload = () => {
+  document
+    .querySelector(".theme-switcher")
+    .classList.add("theme-switcher-enable");
+  const current_theme = localStorage.getItem("dark-theme");
+  if (current_theme == null) {
+    changeThemeIcon(false);
+  } else {
+    document.body.classList.add("dark");
+    changeThemeIcon(true);
+  }
+};
