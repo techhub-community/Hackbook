@@ -1,2 +1,2 @@
 "name": "Anjali Prasad",
-"quote":"Good things happen to those who hustle","tech_stack":"web-developer"
+"quote":"Learning never exhausts the mind","tech_stack":"web-dev"
