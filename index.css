@@ -46,6 +46,7 @@ body {
   top: 0;
   background-color: #fff;
   z-index: 999;
+  padding-top: 12px;
 }
 
 .header-shadow {
@@ -284,16 +285,17 @@ nav {
   width: 120px;
   height: 45px;
   padding-left: 12px;
-  padding-right: 12px;
-  background-color: rgb(131, 103, 255);
+  padding-right: 5px;
+  background-color: transparent ;
   display: flex;
   align-items: center;
+  border:2px solid;
   margin-right: 15px;
   border-radius: 5px;
   justify-content: flex-start;
   gap: 12px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: rgba(3, 65, 50, 0.849);
   text-decoration: none;
 }
 .online-avatars {
@@ -305,12 +307,13 @@ nav {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: rgb(0, 26, 255);
+  background-color: rgba(31, 209, 165, 0.849);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 9px;
   font-weight: 900;
+  color: white;
 }
 .online-avatar img {
   width: 100%;
