@@ -236,16 +236,18 @@ nav {
   left: 15px;
   top: 65px;
 }
+
 .card-blank-name {
   width: 171px;
   height: 16px;
   background-color: #000;
   border-radius: 15px;
 }
+
 .card-blank-quote,
 .card-blank-stack {
-  width: 165px;
-  height: 8px;
+  width: 165px ;
+  height: 8px ;
   background-color: #ccc;
   margin-top: 10px;
   border-radius: 15px;
@@ -398,8 +400,8 @@ nav {
 
 /*dark theme*/
 .dark {
-  background-color: #333131;
-  transition: all 0.3s ease-in;
+  background-color: #333132;
+  transition: all 0.4s ease-in;
 }
 
 .dark .theme-switcher {
@@ -411,11 +413,11 @@ nav {
   background: #2c2c2c;
 }
 .dark .contributor_name {
-  color: #4b4bff;
+  color: #4b4bff ;
 }
 
 .dark .hero-title {
-  color: #7277e7;
+  color: #7277e7 ;
 }
 .dark .quote {
   color: #fff !important;
