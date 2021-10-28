@@ -68,10 +68,14 @@
 //   });
 // })($);
 
+const params ={"state" : "open"}
+const header = {'Authorization' : `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`};
+
+
 const getContributors = async () => {
   try {
     const r = await fetch(
-      "https://api.github.com/repos/techhub-community/Hackbook/contents/data"
+      "https://api.github.com/repos/techhub-community/Hackbook/contents/data",header,params
     );
 
     if (r.status === 200) {
@@ -110,12 +114,12 @@ setTimeout(() => {
         const { name } = user;
 
         const user_info = await axios.get(
-          `https://api.github.com/users/${name}`
+          `https://api.github.com/users/${name}`,header,params
         );
 
         const { avatar_url } = user_info.data;
         const user_content = await axios.get(
-          `https://api.github.com/repos/techhub-community/Hackbook/contents/data/${name}/${name}.md`
+          `https://api.github.com/repos/techhub-community/Hackbook/contents/data/${name}/${name}.md`,header,params
         );
         var inputdata = atob(user_content.data.content);
 
