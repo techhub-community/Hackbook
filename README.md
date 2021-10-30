@@ -8,7 +8,7 @@
 
 ### OCT 8, 2021
 
-Hi hackers!
+Hello hackers!
 
 **Looking for more ways to support the Community? Here are a few ideas:**
 
