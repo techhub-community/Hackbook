@@ -1,1 +1,1 @@
-"name": "Saheb Kumar", "quote": " The best preparation for tomorrow is doing your best today. ", "tech_stack": "CSE student | Open-Source | Full Stack Developer | Freelancer"
+"name": "Saheb Kumar", "quote": " Problems aren't stop signs; they are guidelines." --Robert Schuller ", "tech_stack": "CSE Undergrad student | Open-Source | Full Stack Developer | Freelancer | Entrepreneur"
