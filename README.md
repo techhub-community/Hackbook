@@ -1,12 +1,12 @@
-# HacktoberFest-2021 🏆
+# HacktoberFest-2022 🏆
 
-[About Hacktoberfest](https://hacktoberfest.digitalocean.com/)
+[About Hacktoberfest](https://hacktoberfest.com/)
 
 <hr>
 
 # Hackbook
 
-### OCT 8, 2021
+### OCT 15, 2022
 
 Hello hackers!
 
