@@ -1,1 +1,0 @@
-"name": "Sekhar Jha", "quote": "Coding is my cup of coffee", "tech_stack": "Engineer | Competitive Coder"
