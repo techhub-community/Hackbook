@@ -1,1 +1,0 @@
-"name": "Saheb Kumar", "quote": " Problems aren't stop signs; they are guidelines." --Robert Schuller ", "tech_stack": "CSE Undergrad student | Open-Source | Full Stack Developer | Freelancer | Entrepreneur"
