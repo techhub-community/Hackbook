@@ -1,22 +1,22 @@
-# HacktoberFest-2021 🏆
+# HacktoberFest-2022 🏆
 
-[About Hacktoberfest](https://hacktoberfest.digitalocean.com/)
+[About Hacktoberfest](https://hacktoberfest.com/)
 
 <hr>
 
 # Hackbook
 
-### OCT 8, 2021
+### OCT 15, 2022
 
-Hi hackers!
+Hello hackers!
 
 **Looking for more ways to support the Community? Here are a few ideas:**
 
-👩‍💻 Continue providing feedback on pull requests to help other hackers get their pull request ready to merge. We appreciate your help and love seeing the magic of social coding.
+👩‍💻 Continue in providing feedback on pull requests to help other hackers get their pull request ready to merge. We appreciate your help and love seeing the magic of social coding.
 
 📪 Have patience. Our team is working hard to get through your pull requests and provide everyone with the feedback needed to join the event. GitHub Actions saved our team an enormous amount of time managing reviews this year but, as much as we love our automations, this is still a manual process to ensure the Code of Conduct is followed and the event can be enjoyed by all.
 
-![Techhub-Hackbook](https://raw.githubusercontent.com/anjali112-bit/Posters/main/Techhub/techhub%20HACKBOOK.png)
+![Banner](./assests/banner.png)
 
 
 This repository contains the **Hackbook**. By issuing a pull request to this repository, you can request to be added to the Contributors. 
@@ -103,7 +103,7 @@ _data/MonaTheOctocat/MonaTheOctocat.md
 ```
 Copy the next template into your file, delete the boilerplate data and fill the information with yours.
 ```
-"name": "FULLNAME-OR-NICKNAME", # No longer than 28 characters
+"name": "FULLNAME same as in github profile", # No longer than 28 characters
 "quote": "YOUR-SENIOR-QUOTE", # no longer than 100 characters
 "tech_stack": "YOUR-TECH-STACK" # mention any one or two skills only.
 ```
