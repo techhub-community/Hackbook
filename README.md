@@ -16,7 +16,7 @@ Hello hackers!
 
 📪 Have patience. Our team is working hard to get through your pull requests and provide everyone with the feedback needed to join the event. GitHub Actions saved our team an enormous amount of time managing reviews this year but, as much as we love our automations, this is still a manual process to ensure the Code of Conduct is followed and the event can be enjoyed by all.
 
-![Banner](./assests/banner.png)
+![Banner](./assests/name.png)
 
 
 This repository contains the **Hackbook**. By issuing a pull request to this repository, you can request to be added to the Contributors. 
