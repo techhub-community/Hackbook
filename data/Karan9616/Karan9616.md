@@ -1,3 +1,3 @@
 "name": "Pushkaran",
-"quote": "",
+"quote": "never give up",
 "tech_stack": "C++ STL | Flutter | Java"
