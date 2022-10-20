@@ -26,8 +26,6 @@ This repository contains the **Hackbook**. By issuing a pull request to this rep
 ## Disclaimer 👀
 Consider that all the information that you add to this repository will be publicly available.
 
-- If you don't feel comfortable with displaying your full name, you can include a short name or nickname instead.
-
 # How to Setup
 
 ### 1. Fork it :fork_and_knife:
