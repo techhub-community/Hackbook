@@ -1,2 +1,3 @@
 "name": "Anjali Prasad",
-"quote":"Good things happen to those who hustle","tech_stack":"web-developer"
+"quote": "Trying is better than crying",
+"tech_stack": "C++ |Figma |Frontend "

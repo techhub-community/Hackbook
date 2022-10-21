@@ -46,6 +46,7 @@ body {
   top: 0;
   background-color: #fff;
   z-index: 999;
+  padding-top: 12px;
 }
 
 .header-shadow {
@@ -235,16 +236,18 @@ nav {
   left: 15px;
   top: 65px;
 }
+
 .card-blank-name {
   width: 171px;
   height: 16px;
   background-color: #000;
   border-radius: 15px;
 }
+
 .card-blank-quote,
 .card-blank-stack {
-  width: 165px;
-  height: 8px;
+  width: 165px ;
+  height: 8px ;
   background-color: #ccc;
   margin-top: 10px;
   border-radius: 15px;
@@ -284,16 +287,17 @@ nav {
   width: 120px;
   height: 45px;
   padding-left: 12px;
-  padding-right: 12px;
-  background-color: rgb(131, 103, 255);
+  padding-right: 5px;
+  background-color: transparent ;
   display: flex;
   align-items: center;
+  border:2px solid;
   margin-right: 15px;
   border-radius: 5px;
   justify-content: flex-start;
   gap: 12px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: rgba(3, 65, 50, 0.849);
   text-decoration: none;
 }
 .online-avatars {
@@ -305,12 +309,13 @@ nav {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: rgb(0, 26, 255);
+  background-color: rgba(31, 209, 165, 0.849);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 9px;
   font-weight: 900;
+  color: white;
 }
 .online-avatar img {
   width: 100%;
@@ -395,8 +400,8 @@ nav {
 
 /*dark theme*/
 .dark {
-  background-color: #333131;
-  transition: all 0.3s ease-in;
+  background-color: #333132;
+  transition: all 0.4s ease-in;
 }
 
 .dark .theme-switcher {
@@ -408,11 +413,11 @@ nav {
   background: #2c2c2c;
 }
 .dark .contributor_name {
-  color: #4b4bff;
+  color: #4b4bff ;
 }
 
 .dark .hero-title {
-  color: #7277e7;
+  color: #7277e7 ;
 }
 .dark .quote {
   color: #fff !important;

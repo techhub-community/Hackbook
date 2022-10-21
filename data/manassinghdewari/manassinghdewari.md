@@ -1,3 +1,3 @@
 "name": "Manas Dewari",
-"quote": "Try try don't cry",
-"tech_stack": "ethical hacking"
+"quote": "Love the life you live",
+"tech_stack": "React | C++"

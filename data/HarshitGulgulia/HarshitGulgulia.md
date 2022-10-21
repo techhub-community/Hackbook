@@ -1,3 +1,3 @@
 "name": "Harshit Gulgulia",
-"quote": "Don't take load, just code",
-"tech_stack": "C | C++"
+"quote": "Consistency is the key to success",
+"tech_stack": "C++ | Flutter"
