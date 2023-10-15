@@ -300,6 +300,9 @@ nav {
   color: rgba(3, 65, 50, 0.849);
   text-decoration: none;
 }
+.dark .discord_btn {
+  color: #7277e7;
+}
 .online-avatars {
   display: flex;
   align-items: center;
