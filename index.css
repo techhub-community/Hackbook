@@ -404,6 +404,10 @@ nav {
   transition: all 0.4s ease-in;
 }
 
+.dark .discord_btn {
+  color: #7277e7;
+}
+
 .dark .theme-switcher {
   background-color: #262626;
 }
