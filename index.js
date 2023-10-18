@@ -68,6 +68,17 @@
 //   });
 // })($);
 
+//Function to truncate the quote
+function limitWords(text, limit) {
+  const words = text.split(' ');
+
+  if (words.length > limit) {
+    return words.slice(0, limit).join(' ') + '...'; 
+  } else {
+    return text;
+  }
+}
+
 const params ={"state" : "open"}
 const header = {'Authorization' : `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`};
 
@@ -132,7 +143,7 @@ setTimeout(() => {
       <div class="card-details">
       
           <h3 class="contributor_name">${obj.name}</h3>
-          <p class="quote">${obj.quote}</p>
+          <p class="quote">${limitWords(obj.quote, 14)}</p>
           <p class="stack">${obj.tech_stack}</p>
           
       </div>
